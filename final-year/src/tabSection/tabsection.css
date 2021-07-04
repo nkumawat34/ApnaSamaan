@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.parallax {
+    /* The image used */
+  margin-top:200px;
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:0;
+    filter: blur(3px);
+
+ }
+
+ .main-parallax{
+     position:relative;
+ }
+
+ .inner_parallax{
+    z-index:1;
+    position:absolute;
+    top:20%;
+    left:15%;
+    right:10%;
+    background: #ffffff;
+background:linear-gradient(7deg, rgba(144,25,203,1) 0%, rgba(255,0,0,1) 48%, rgba(0,212,255,1) 91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size:3vw;
+    background-color: #c7e9fb;
+    
+
+ }
+
+
+.tab_heading{
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.tab_main{
+    margin-top:200px;
+}
+
+.section-tab-nav {
+    display: inline-block;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section-tab-nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.section-tab-nav > li > a {
+    font-weight: 700;
+    color: #8D99AE;
+
+}
+
+section-tab-nav li a {
+    color: #D10024;
+}
+
+.section-tab-nav li a:hover:after, .section-tab-nav li a:focus:after, .section-tab-nav li.active a:after {
+    width: 100%;
+}
+
+.section-tab-nav li a:after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #D10024;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}

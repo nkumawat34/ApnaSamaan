@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.header_container{
+    background:#191936;
+    border-bottom: 7px solid rgb(224, 1, 1);
+}
+
+.logo{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    background: -webkit-linear-gradient(143deg, rgba(255,5,5,1) 15%, rgba(188,16,16,1) 49%, rgba(159,113,49,1) 94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icons{
+    font-size:30px;
+    color:cornsilk;
+}
+
+.responsive-nav>ul>li{
+    display:inline;
+
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav_container{
+    border-bottom:2px solid rgb(226, 226, 226);
+    font-size: 1.07vw;
+    
+    font-family: 'Roboto Slab', serif;
+}
+
+.list{
+    height:100%;
+    min-width: 50%;
+}
+
+.link{
+    margin:0 20px;
+    color:black;
+    font-weight: 456;
+}
+
+.link:hover{
+    background: -webkit-linear-gradient(143deg, rgba(255,5,5,1) 15%, rgba(188,16,16,1) 49%, rgba(159,113,49,1) 94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.drop-self{
+    
+    display:inline-block;
+
+}
+
+.logout
+{
+    margin-left:50vw;
+    
+}
+.self-button
+{
+    border: none;
+}
