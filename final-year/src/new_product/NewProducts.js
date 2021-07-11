@@ -7,6 +7,7 @@ import {FaShoppingCart} from "react-icons/fa";
 import firebase from "firebase/app";
 import {db} from "../firebase";
 import  {useHistory}  from "react-router-dom";
+import {Link} from "react-router-dom"
 function NewProducts({user})
 {
   let history = useHistory();
@@ -90,7 +91,11 @@ history.push("/signin")
                            <div class="col">
                               <div className="box">
                                 <div className="img_container">
-                                  <img src ={data.imgsrc} alt="" className="img_src"/>
+                                  <Link to={{
+                                         pathname:"/product",
+                                         state:data
+                                  }}>
+                                  <img src ={data.imgsrc} alt="" className="img_src"/></Link>
                                 </div>
                                 <div className="mt-2 text-center">
                                   <div className="fontStyle uppercase  my-1">{data.name}</div>

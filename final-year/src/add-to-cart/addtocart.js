@@ -5,6 +5,8 @@ import {BiSearchAlt,BiHeart} from "react-icons/bi";
 import {FaShoppingCart} from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import firebase from "firebase/app";
+import "./addtocart.css"
+import { Link } from 'react-router-dom';
 export default function AddToCart({user}) {
 
     var docRef = db.collection("addtocart").doc(user.uid)
@@ -44,7 +46,7 @@ db.collection("addtocart")
                     
                 
         <div className="col-md-4">
-           <div class="box-self ">
+           <div class="box-cart">
             <img src={Wooden.imgsrc} class="img-size" />
 
            <div className="product-name"> <center><h4>{Wooden.name}</h4></center> </div>
@@ -54,7 +56,12 @@ db.collection("addtocart")
                                   <button className="btn btn-outline-danger product-icons"data-bs-toggle="tooltip" id="add-cart" data-bs-placement="top" title="add to cart"><FaShoppingCart className="product-icons"/></button>
            </div> </div>
         </div>)
-              })}</div></div>
+              })}</div>
+              <div className="row">
+                  <div className="col-md">
+              <center><Link to="/checkout"><button type="button" class="btn btn-danger btn-lg button-width">Check Out</button></Link></center>
+                  </div></div>
+                  </div>
     </>
     )
 }

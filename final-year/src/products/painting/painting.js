@@ -9,6 +9,7 @@ import {Painting } from '../../tabSection/commondata';
 import firebase from "firebase/app";
 import {db} from "../../firebase"
 import  {useHistory}  from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function PAinting({user}) {
 
@@ -58,7 +59,11 @@ export default function PAinting({user}) {
                   
         <div className="col-md-4">
            <div class="box-self ">
-            <img src={Painting.imgsrc} class="img-size" />
+             <Link to={{
+                     pathname:"/product",
+                     state:Painting
+             }}>
+            <img src={Painting.imgsrc} class="img-size" /></Link>
 
            <div className="product-name"> <center><h4>{Painting.name}</h4></center> </div>
             <div className="product-price"><h3><b>₹{Painting.price}</b></h3></div>

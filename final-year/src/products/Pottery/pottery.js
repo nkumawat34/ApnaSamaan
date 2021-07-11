@@ -9,6 +9,7 @@ import { Pottery } from '../../tabSection/commondata';
 import firebase from "firebase/app";
 import {db} from "../../firebase"
 import {useHistory} from "react-router-dom"
+import { Link } from 'react-router-dom';
 export default function POttery({user}) {
 
     let history=useHistory();
@@ -58,7 +59,12 @@ else
                   
         <div className="col-md-4">
            <div class="box-self ">
-            <img src={Pottery.imgsrc} class="img-size" />
+             <Link to={{
+               pathname:"/product",
+               state:Pottery
+
+              } }>
+            <img src={Pottery.imgsrc} class="img-size" /></Link>
 
            <div className="product-name"> <center><h4>{Pottery.name}</h4></center> </div>
             <div className="product-price"><h3><b>₹{Pottery.price}</b></h3></div>

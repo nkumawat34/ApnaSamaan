@@ -65,7 +65,6 @@ else
                 <div class="card card-self">
   <div class="card-header">
     <h2><b>Apna Samaan Information</b></h2>
-    <button onClick={()=>{FormSubmit()}}>Hello</button>
   </div>
   <div class="card-body">
     <blockquote class="blockquote mb-0">

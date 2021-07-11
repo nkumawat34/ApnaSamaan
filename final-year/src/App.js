@@ -18,6 +18,7 @@ import search, {Search} from "./search"
 import Wishlist from "./wishlist/wishlist.js"
 import Product from "./product_page/product.js"
 import AddToCart from "./add-to-cart/addtocart"
+import Checkout from "./checkout-page/checkout"
 
 function App() {
 
@@ -83,6 +84,9 @@ useEffect(()=>{
         </Route>
         <Route exact path='/addtocart'>
           <AddToCart user={user}/>
+        </Route>
+        <Route exact path="/checkout">
+          <Checkout user={user}/>
         </Route>
       </Switch>
      
