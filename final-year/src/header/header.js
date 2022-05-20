@@ -30,7 +30,7 @@ function Header({user}){
                                         }}  />
                                         <Link to={{
                                           pathname:"/search",
-                                          state:searchterm}}><button type="button" className="btn btn-outline-danger ms-3" style={{height:"2.5rem",width:"8rem"}} >search</button></Link>
+                                          state:searchterm}}><button type="button" className="btn btn-outline-danger" >search</button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@ function Header({user}){
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
         <li class="nav-item">
-          <Link to="/ApnaSamaan" class="nav-link active ms-5 " aria-current="page" >Home</Link>
+          <Link to="/" class="nav-link active ms-5 " aria-current="page" >Home</Link>
         </li>
         
         <li class="nav-item dropdown">
@@ -81,7 +81,7 @@ function Header({user}){
         {
           user?
           <li class="nav-item logout" >
-          <button type="button" class="nav-link active self-button" aria-current="page" onClick={()=>{
+          <button type="button" class="nav-link active ms-5 self-button" aria-current="page" onClick={()=>{
             auth.signOut();
             history.push('/ApnaSamaan')
           }} >LogOut</button>

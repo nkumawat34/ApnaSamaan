@@ -31,7 +31,7 @@ db.collection("addtocart")
       
 const placedOrder=()=>{
     alert("Your Order is placed succesfully");
-    history.push("/")
+    history.push("/ApnaSamaan")
    // if(user){
     //var docRef=db.collection("addtocart").doc(user.uid)
     db.collection("addtocart").doc(user.uid).set({},{merge:false})
