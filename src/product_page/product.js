@@ -70,7 +70,7 @@ else
         <p className="product-data">We present our clients a work of extremely high quality  Handicrafts  range. 
         This Wood Carvings items are the hot favourite of interior decorations and Vaastu designs for offices, homes and other places of being.
          The products made and carved by us are surely a classic piece of classical Indian handicrafts to cherish and behold.</p>
-         <center><button type="button" class="btn btn-success btn-lg" id="buy" onClick={()=>{AddToCart();history.push('/addtocart')}}> Buy Now</button></center>
+         <center><button type="button" class="btn btn-success btn-lg" id="buy" onClick={()=>{if(user){AddToCart();history.push('/addtocart')}else{history.push('/signin')}}}> Buy Now</button></center>
         </div>
         </div>
         </div>
